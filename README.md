@@ -37,7 +37,9 @@ cv2.imshow("Gray image",gray_image)
 cv2.imshow("color image",color_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+```
 
+```
 import numpy as np
 gray_image=cv2.imread('gray.jpg')
 import matplotlib.pyplot as plt 
@@ -51,7 +53,9 @@ plt.xlabel("Grayscale value")
 plt.ylabel("pixel count")
 plt.stem(gray_hist)
 plt.show()
+```
 
+```
 import numpy as np
 color_image=cv2.imread('color.jpg')
 color_img=cv2.cvtColor(color_image,cv2.COLOR_BGR2RGB)
@@ -66,7 +70,9 @@ plt.xlabel("Colorscale value")
 plt.ylabel("pixel count")
 plt.stem(color_hist)
 plt.show()
+```
 
+```
 import cv2
 gray_image = cv2.imread("gray.jpg",0)
 cv2.imshow('Grey Scale Image',gray_image)
